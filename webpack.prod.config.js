@@ -1,5 +1,5 @@
 /**
-* Copyright NGR Softlab 2023
+* Copyright Fedyakov Mikhail 2025
 */
 
 const path = require('path')
