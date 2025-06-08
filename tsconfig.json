@@ -1,0 +1,69 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "dist",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "declaration": true,
+    "declarationDir": "dist",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "importHelpers": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": "src",
+    "paths": {
+      "~models": [
+        "models/*"
+      ],
+      "~pages": [
+        "pages/*"
+      ],
+      "~components": [
+        "components/*"
+      ],
+      "~hooks": [
+        "hooks/*"
+      ],
+      "~services": [
+        "services/*"
+      ],
+      "~api": [
+        "api/*"
+      ],
+      "~mutations": [
+        "mutations/*"
+      ],
+      "~queries": [
+        "queries/*"
+      ],
+      "~contexts": [
+        "contexts/*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
