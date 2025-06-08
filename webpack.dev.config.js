@@ -28,15 +28,6 @@ module.exports = merge(common, {
 				target: process.env.PROXY,
 				secure: false,
 				changeOrigin: true
-			},
-			{
-				context: [
-					'/notifications'
-				],
-				target: process.env.WS_PROXY,
-				changeOrigin: true,
-				secure: false,
-				ws: true
 			}
 		],
 		historyApiFallback: {
@@ -46,7 +37,6 @@ module.exports = merge(common, {
 		hot: true
 	},
 	module: {
-    /* для работы какой-то фигни */
 		rules: [
 			{
 				test: /\.mjs$/,
@@ -62,13 +52,6 @@ module.exports = merge(common, {
 		new webpack.DefinePlugin({
 			'process.env': JSON.stringify(process.env)
 		}),
-
-    /* Убираем ошибку process is not defined [https://stackoverflow.com/a/66731232/16982966] */
-		// new webpack.ProvidePlugin({
-		// 	process: 'process/browser'
-		// }),
-
-    /* Добавляем HMR */
 		new ReactRefreshWebpackPlugin({})
 	]
 })
